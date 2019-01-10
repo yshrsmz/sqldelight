@@ -9,7 +9,7 @@
 <br/>
 <h1>Transacter</h1>
 <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Transacter</span></code>
-<p>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-database/index.html">SqlDatabase</a> wrapper which can begin a <a href="-transaction/index.html">Transaction</a> on the current connection.</p>
+<p>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-driver/index.html">SqlDriver</a> wrapper which can begin a <a href="-transaction/index.html">Transaction</a> on the current connection.</p>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -19,7 +19,7 @@
 </td>
 <td>
 <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Transaction</span></code>
-<p>A SQL transaction. Can be created through the driver via <a href="../../com.squareup.sqldelight.db/-sql-database/new-transaction.html">SqlDatabase.newTransaction</a> or
+<p>A SQL transaction. Can be created through the driver via <a href="../../com.squareup.sqldelight.db/-sql-driver/new-transaction.html">SqlDriver.newTransaction</a> or
 through an implementation of <a href="./index.html">Transacter</a> by calling <a href="transaction.html">Transacter.transaction</a>.</p>
 </td>
 </tr>
@@ -33,8 +33,8 @@ through an implementation of <a href="./index.html">Transacter</a> by calling <a
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">Transacter</span><span class="symbol">(</span><span class="identifier" id="com.squareup.sqldelight.Transacter$<init>(com.squareup.sqldelight.db.SqlDatabase)/database">database</span><span class="symbol">:</span>&nbsp;<a href="../../com.squareup.sqldelight.db/-sql-database/index.html"><span class="identifier">SqlDatabase</span></a><span class="symbol">)</span></code>
-<p>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-database/index.html">SqlDatabase</a> wrapper which can begin a <a href="-transaction/index.html">Transaction</a> on the current connection.</p>
+<code><span class="identifier">Transacter</span><span class="symbol">(</span><span class="identifier" id="com.squareup.sqldelight.Transacter$<init>(com.squareup.sqldelight.db.SqlDriver)/driver">driver</span><span class="symbol">:</span>&nbsp;<a href="../../com.squareup.sqldelight.db/-sql-driver/index.html"><span class="identifier">SqlDriver</span></a><span class="symbol">)</span></code>
+<p>A transaction-aware <a href="../../com.squareup.sqldelight.db/-sql-driver/index.html">SqlDriver</a> wrapper which can begin a <a href="-transaction/index.html">Transaction</a> on the current connection.</p>
 </td>
 </tr>
 </tbody>

@@ -9,7 +9,7 @@
 <br/>
 <h1>Transaction</h1>
 <code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Transaction</span></code>
-<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-database/new-transaction.html">SqlDatabase.newTransaction</a> or
+<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-driver/new-transaction.html">SqlDriver.newTransaction</a> or
 through an implementation of <a href="../index.html">Transacter</a> by calling <a href="../transaction.html">Transacter.transaction</a>.</p>
 <h3>Constructors</h3>
 <table>
@@ -20,7 +20,7 @@ through an implementation of <a href="../index.html">Transacter</a> by calling <
 </td>
 <td>
 <code><span class="identifier">Transaction</span><span class="symbol">(</span><span class="symbol">)</span></code>
-<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-database/new-transaction.html">SqlDatabase.newTransaction</a> or
+<p>A SQL transaction. Can be created through the driver via <a href="../../../com.squareup.sqldelight.db/-sql-driver/new-transaction.html">SqlDriver.newTransaction</a> or
 through an implementation of <a href="../index.html">Transacter</a> by calling <a href="../transaction.html">Transacter.transaction</a>.</p>
 </td>
 </tr>
@@ -67,7 +67,7 @@ through an implementation of <a href="../index.html">Transacter</a> by calling <
 </td>
 <td>
 <code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">endTransaction</span><span class="symbol">(</span><span class="identifier" id="com.squareup.sqldelight.Transacter.Transaction$endTransaction(kotlin.Boolean)/successful">successful</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
-<p>Signal to the underlying SQL database that this transaction should be finished.</p>
+<p>Signal to the underlying SQL driver that this transaction should be finished.</p>
 </td>
 </tr>
 <tr>

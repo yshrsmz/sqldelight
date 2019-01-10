@@ -12,7 +12,7 @@
 <p>Represents a SQL statement that has been prepared by a driver to be executed.</p>
 <p>This type is not thread safe unless otherwise specified by the driver emitting these.</p>
 <p>Prepared statements should not be cached by client code. Drivers can implement caching by using
-the integer identifier passed to <a href="../-sql-database/execute.html">SqlDatabase.execute</a> or <a href="../-sql-database/execute-query.html">SqlDatabase.executeQuery</a>.
+the integer identifier passed to <a href="../-sql-driver/execute.html">SqlDriver.execute</a> or <a href="../-sql-driver/execute-query.html">SqlDriver.executeQuery</a>.
 Client code can pass the same identifier to that method to request that the prepared statement
 is cached.</p>
 <h3>Functions</h3>
