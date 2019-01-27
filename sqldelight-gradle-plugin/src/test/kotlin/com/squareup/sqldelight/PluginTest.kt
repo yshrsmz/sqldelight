@@ -129,6 +129,23 @@ class PluginTest {
   }
 
   @Test
+  fun `The generate task is a dependency of multiplatform android target with 1-3-20 DSL`() {
+    val fixtureRoot = File("src/test/kotlin-mpp-1.3.20-jetifier")
+    val runner = GradleRunner.create()
+            .withProjectDir(fixtureRoot)
+            .withPluginClasspath()
+
+    val buildDir = File(fixtureRoot, "build/sqldelight")
+
+    buildDir.delete()
+    val result = runner
+            .withArguments("clean", "assembleRelease", "--stacktrace")
+            .build()
+    assertThat(result.output).contains("generateSqlDelightInterface")
+    assertThat(buildDir.exists()).isTrue()
+  }
+
+  @Test
   @Category(IosTest::class)
   fun `The generate task is a dependency of multiplatform ios target with 1-3-20 DSL`() {
     val fixtureRoot = File("src/test/kotlin-mpp-1.3.20")
